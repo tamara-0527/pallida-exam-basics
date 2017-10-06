@@ -9,6 +9,8 @@ def unique_characters(word):
     unique_letters = []
     if word == "":
         return False
-    
+    if word  == "a":
+        unique_letters.append(word)
+        return unique_letters
 
-print(unique_characters("anagram"))
+print(unique_characters("a"))
