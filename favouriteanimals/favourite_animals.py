@@ -11,19 +11,25 @@
 from sys import argv
 
 
-fav_animals = 'favourites.txt'
 
-def add_fav_animals(fav_animals, animal):
-    with open(fav_animals, 'a') as f:
-        if animal not in file_name:
-            fw.write(''.join(animal) + '\n')
-        else:
-            return False
 
+
+def add_fav_animals():
+    fav_animals = 'favourites.txt'
+    animal = argv[-1]
+    with open(fav_animals, 'r+') as fav_animals:
+        for line in fav_animals:
+            if animal in fav_animals:
+                return "It's existed"
+            elif animal not in fav_animals:
+                fav_animals.write(''.join(animal) + '\n')
+                return fav_animals
 
 def controller():
     if argv[-1] == "favourite_animals.py":
         return ("fav_animals [animal] [animal]")
-    
+    else:
+        return add_fav_animals()
 
+    
 print(controller())
