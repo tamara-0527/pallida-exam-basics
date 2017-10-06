@@ -15,5 +15,6 @@ class UniqueCharsTest(unittest.TestCase):
     def test_three_letter_without_a(self):
         self.assertEqual(unique_chars.unique_characters("cat"), ["c", "t"])
 
+
 if __name__ == '__main__':
     unittest.main()
