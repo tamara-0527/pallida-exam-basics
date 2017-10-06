@@ -7,10 +7,12 @@
 
 def unique_characters(word):
     unique_letters = []
-    if word == "":
+    letters = len(word)
+    if letters == 0:
         return False
-    if word  == "a":
-        unique_letters.append(word)
-        return unique_letters
+    for letter in word:
+        if letter in word:
+            unique_letters.append(letter)
+    return unique_letters
 
-print(unique_characters("a"))
+print(unique_characters("cat"))
