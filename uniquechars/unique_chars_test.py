@@ -7,11 +7,13 @@ class UniqueCharsTest(unittest.TestCase):
         self.assertEqual(unique_chars.unique_characters(""), False)
 
     def test_one_letter(self):
-        self.assertEqual(unique_chars.unique_characters("a"), ["a"])
+        self.assertEqual(unique_chars.unique_characters("b"), ["b"])
 
     def test_three_letter(self):
-        self.assertEqual(unique_chars.unique_characters("cat"), ["c", "a", "t"])
+        self.assertEqual(unique_chars.unique_characters("dog"), ["d", "o", "g"])
 
+    def test_three_letter_without_a(self):
+        self.assertEqual(unique_chars.unique_characters("cat"), ["c", "t"])
 
 if __name__ == '__main__':
     unittest.main()

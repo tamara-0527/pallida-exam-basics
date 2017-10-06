@@ -10,9 +10,11 @@ def unique_characters(word):
     letters = len(word)
     if letters == 0:
         return False
-    for letter in word:
-        if letter in word:
-            unique_letters.append(letter)
+    for letter in word:       
+        unique_letters.append(letter)
+        if letter == "a":
+            unique_letters.remove("a")
     return unique_letters
+        
 
-print(unique_characters("cat"))
+unique_characters("anagram")
