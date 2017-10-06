@@ -7,3 +7,23 @@
 # One animal should be stored only at once
 # Each animal should be written in separate lines
 # The program should only save animals, no need to print them
+
+from sys import argv
+
+
+fav_animals = 'favourites.txt'
+
+def add_fav_animals(fav_animals, animal):
+    with open(fav_animals, 'a') as f:
+        if animal not in file_name:
+            fw.write(''.join(animal) + '\n')
+        else:
+            return False
+
+
+def controller():
+    if argv[-1] == "favourite_animals.py":
+        return ("fav_animals [animal] [animal]")
+    
+
+print(controller())
