@@ -32,8 +32,10 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+Function is a block of organised, it is an reuseable code. The blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).
+The method is a function in the class. Method is only the other name of the function inside the class.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+The constructor is a method inside a class. The constructor is the following method: def __init__():
+We can use it, when we isistance a class. The constructor will be run automatically at the isistance.
